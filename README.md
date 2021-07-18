@@ -30,4 +30,4 @@ On first start with recommended `-e KEYS=type`:
 * Open docker shell `docker exec -it <containerid> sh`
 * Check synchronization `hddcoin show -s -c`
 * Check farming `hddcoin farm summary`
-* Check balance `hddcoin wallet show summary` 
+* Check balance `hddcoin wallet show` 
