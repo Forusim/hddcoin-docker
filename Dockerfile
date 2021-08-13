@@ -3,8 +3,6 @@ FROM ubuntu:latest
 ARG DEBIAN_FRONTEND="noninteractive"
 ARG BRANCH="main"
 
-EXPOSE 28444
-
 ENV keys="generate"
 ENV harvester="false"
 ENV farmer="false"
@@ -22,6 +20,7 @@ RUN git clone --branch ${BRANCH} https://github.com/HDDcoin-Network/hddcoin-bloc
 
 ENV PATH=/hddcoin-blockchain/venv/bin/:$PATH
 
+EXPOSE 28444
 WORKDIR /hddcoin-blockchain
 
 COPY ./entrypoint.sh entrypoint.sh
