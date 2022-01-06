@@ -1,4 +1,4 @@
-![](https://hddcoin.org/wp-content/uploads/2021/07/hdd_coin_logo_website_75.png)
+<img src="https://hddcoin.org/wp-content/uploads/2021/11/HDDcoin_logo_grey_300_smooth-1.png" height="100">
 
 # HDDcoin Docker Container
 https://hddcoin.org/
@@ -6,8 +6,9 @@ https://hddcoin.org/
 ## Configuration
 Required configuration:
 * Publish network port via `-p 28444:28444`
-* Bind mounting a host plot dir in the container to `/plots`  (e.g. `-v /path/to/hdd/storage/:/plots`)
-* Bind mounting a host config dir in the container to `/root/.hddcoin`  (e.g. `-v /path/to/storage/:/root/.hddcoin`)
+* Bind mounting a host plot dir in the container to `/plots` (e.g. `-v /path/to/hdd/storage/:/plots`)
+* Bind mounting a host config dir in the container to `/root/.hddcoin` (e.g. `-v /path/to/storage/:/root/.hddcoin`)
+* Bind mounting a host config dir in the container to `/root/.hddcoin_keys` (e.g. `-v /path/to/storage/:/root/.hddcoin_keys`)
 * Set initial `hddcoin keys add` method:
   * Manual input from docker shell via `-e KEYS=type` (recommended)
   * Copy from existing farmer via `-e KEYS=copy` and `-e CA=/path/to/mainnet/config/ssl/ca/` 
